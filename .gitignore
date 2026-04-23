@@ -1,24 +1,190 @@
-# Logs
-logs
-*.log
+# ============================================
+# Node.js / Frontend
+# ============================================
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ============================================
+# Python / Backend
+# ============================================
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+backend/venv/
+backend_try2/venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/__pycache__/
+backend_try2/__pycache__/
+
+# Python distribution / packaging
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================
+# Backup Folders (DO NOT COMMIT)
+# ============================================
+backup_*/
+BACKUP_*/
+*_BACKUP_*/
+COMPLETE_BACKUP_*/
+FINAL_BACKUP_*/
+
+# ============================================
+# Test Data / Generated Images
+# ============================================
+# Test images (large files)
+test_360_frames/
+test_360_24frames/
+test_360_36frames/
+test_360_48frames/
+test_360_60frames/
+test_real_room_360/
+test_real_photos/
+
+# Generated panoramas
+*.jpg
+*.jpeg
+*.png
+!frontend/public/**/*.jpg
+!frontend/public/**/*.jpeg
+!frontend/public/**/*.png
+
+# But keep important documentation images if any
+!docs/**/*.jpg
+!docs/**/*.png
+
+# ============================================
+# PowerShell Scripts (Local Development Only)
+# ============================================
+# Backup scripts (not needed on GitHub)
+backup_*.ps1
+verify_backup.ps1
+
+# Cleanup scripts (not needed on GitHub)
+cleanup_*.ps1
+
+# Test scripts (not needed on GitHub)
+test_scripts.ps1
+
+# Keep only essential start scripts
+# start-complete-system.ps1 (keep)
+# start-frontend-only.ps1 (keep)
+
+# ============================================
+# Documentation Files (Markdown)
+# ============================================
+# Ignore all markdown files
+*.md
+
+# But keep essential README files
+!README.md
+!frontend/README.md
+!backend/README.md
+!backend_try2/README.md
+# ngrok config (contains auth token)
+ngrok.yml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# IDE / Editor
+# ============================================
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ============================================
+# Kiro AI Assistant
+# ============================================
+.kiro/
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+
+# ============================================
+# OS Files
+# ============================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+
+# ============================================
+# Git
+# ============================================
+*.orig

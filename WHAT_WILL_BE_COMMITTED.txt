@@ -1,0 +1,144 @@
+===============================================
+WHAT WILL BE COMMITTED TO GITHUB
+===============================================
+
+✅ WILL BE COMMITTED:
+===============================================
+
+1. Essential PowerShell Scripts (.ps1)
+   ✅ start-complete-system.ps1 (needed to start the app)
+   ✅ start-frontend-only.ps1 (needed to start frontend)
+
+2. Essential README Files
+   ✅ README.md (root)
+   ✅ frontend/README.md
+   ✅ backend/README.md
+   ✅ backend_try2/README.md
+
+3. Source Code
+   ✅ frontend/src/**/*.tsx
+   ✅ frontend/src/**/*.ts
+   ✅ backend/*.py
+   ✅ backend_try2/*.py
+
+4. Configuration Files
+   ✅ frontend/package.json
+   ✅ frontend/vite.config.ts
+   ✅ frontend/tsconfig.*.json
+   ✅ backend/requirements.txt
+   ✅ backend_try2/requirements.txt
+   ✅ .gitignore
+
+5. Static Assets
+   ✅ frontend/public/**/*
+
+===============================================
+❌ WILL BE IGNORED (NOT COMMITTED):
+===============================================
+
+1. PowerShell Scripts (Local Development Only)
+   ❌ backup_before_cleanup.ps1
+   ❌ backup_complete_final.ps1
+   ❌ backup_complete.ps1
+   ❌ backup_existing.ps1
+   ❌ backup_simple.ps1
+   ❌ cleanup_codebase.ps1
+   ❌ cleanup_safe.ps1
+   ❌ cleanup_simple.ps1
+   ❌ test_scripts.ps1
+   ❌ verify_backup.ps1
+
+2. All Markdown Documentation (except READMEs)
+   ❌ ARCHITECTURE_DECISION_RECORD_COMPLETE.md
+   ❌ ARCHITECTURE_DECISION_RECORD.md
+   ❌ BACKEND_2_FAILURE_ANALYSIS.md
+   ❌ BACKEND_2_FAILURE_REASONS.md
+   ❌ BACKEND_2_LINUX_TRUTH.md
+   ❌ BACKEND_ADR.md
+   ❌ CLEANUP_INSTRUCTIONS.md
+   ❌ FINAL_TEST_REPORT.md
+   ❌ FRONTEND_ADR.md
+   ❌ FRONTEND_CLEANUP_SUMMARY.md
+   ❌ FRONTEND_REORGANIZATION_SUMMARY.md
+   ❌ GIT_COMMIT_GUIDE.md
+   ❌ PRODUCTION_README.md
+   ❌ REPO_USAGE_BREAKDOWN.md
+   ❌ ROBUST_360_PIPELINE_EXPLAINED.md
+   ❌ TESTING_RESULTS_AND_RECOMMENDATIONS.md
+   ❌ (All other .md files)
+
+2. Dependencies
+   ❌ node_modules/
+   ❌ frontend/node_modules/
+   ❌ venv/
+   ❌ backend/venv/
+   ❌ backend_try2/venv/
+
+3. Build Artifacts
+   ❌ dist/
+   ❌ frontend/dist/
+   ❌ __pycache__/
+   ❌ *.pyc
+
+4. Backup Folders
+   ❌ backup_20260423_140234/
+   ❌ backup_20260423_140410/
+   ❌ BACKUP_EXISTING_20260423_142645/
+   ❌ COMPLETE_BACKUP_20260423_140624/
+   ❌ FINAL_BACKUP_20260423_143059/
+
+5. Test Images
+   ❌ test_360_frames/
+   ❌ *.jpg
+   ❌ *.png
+
+6. Sensitive Files
+   ❌ ngrok.yml (contains auth token!)
+   ❌ .env
+
+7. IDE Files
+   ❌ .vscode/
+   ❌ .kiro/
+   ❌ .DS_Store
+
+8. Logs
+   ❌ *.log
+
+===============================================
+REPOSITORY SIZE:
+===============================================
+
+Before: 500MB - 1GB (with everything)
+After:  ~3-5MB (only essential files)
+
+===============================================
+READY TO COMMIT:
+===============================================
+
+Run these commands:
+
+1. Check what will be committed:
+   git add .
+   git status
+
+2. Commit:
+   git commit -m "Initial commit: 360° panorama system"
+
+3. Push:
+   git push origin main
+
+===============================================
+SUMMARY:
+===============================================
+
+✅ Only 2 essential .ps1 scripts WILL be committed:
+   - start-complete-system.ps1 (to start the app)
+   - start-frontend-only.ps1 (to start frontend)
+
+✅ Only 4 README.md files WILL be committed
+
+❌ All backup/cleanup/test .ps1 scripts WILL BE IGNORED
+❌ All other .md files WILL BE IGNORED
+❌ All large files (backups, images, dependencies) WILL BE IGNORED
+
+Result: Clean, minimal repository (~2-3MB) with only necessary code!
